@@ -62,7 +62,7 @@ font-family: Work Sans;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 26px; 
+
   }
   .banner-title{
     color: var(--dark-01, #131313);
@@ -86,7 +86,7 @@ line-height: normal;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
-   margin: 5%;
+   margin: 40px 10px 60px 100px ;
 }
 .content-title{
     color: var(--dark-03, #727272);
@@ -104,12 +104,129 @@ font-style: normal;
 font-weight: 400;
 line-height: 26px;
 }
+.fact-title{
+    color: var(--dark-01, #131313);
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+margin-left: 140px;
 
+}
+.fact-description{
+    color: var(--dark-03, #727272);
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+margin-left: 140px;
+margin-top: opx;
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.card{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    padding: 30px;
+    
+}
+.card-title{
+    color: #424242;
+font-family: Work Sans;
+font-size: 25px;
+font-weight: 600;
 
-
-
-
-
+}
+.card-description{
+    color:#727272;
+text-align: center;
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.sp-title{
+    color:#131313;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center;
+}
+.sp-des{
+    color: var(--dark-03, #727272);
+text-align: center;
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+.sp-img{
+    display: flex;
+    justify-content: space-around;
+}
+.features{
+  display: flex;
+}
+.section-title{
+  color: var(--dark-01, #131313);
+font-family: Work Sans;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.text-light-gray{
+  color: var(--dark-03, #727272);
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+.feature-content{
+  margin: 90px;
+}
+.card{
+  margin-top: 20px;
+  border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.ten-years-badge{
+  width: 300px;
+height: 200px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #FF900E;
+position: relative;
+bottom: 150px;
+}
+.ten-years-badge h2{
+  color: #FFF;
+text-align: center;
+font-family: Work Sans;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: 70px; /* 107.692% */
+padding-top: 42px;
+}
+.exp{
+  text-align:center;
+  font-family: Work Sans;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600px;
+  font-style: normal;
+  padding-bottom: 100%px;
+ 
+}
 
 
 
@@ -137,12 +254,40 @@ line-height: 26px;
   .team-container img{
     width: 70%;
   }
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2px;
+   
+}
+.card{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    width: 50%;
+height: 60%;
+    }
+    .sp-container{
+        height: 50%;
+        width: 70%;
+        text-align: center;
+       }
+       .sp-img{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sp-img img{
+        height: 50%;
+        width: 50%;
+    }
   }
    /*Responsive media queries-for medium device*/
    @media screen and (min-width:576px) and (max-width:960px) {
     
     header{
-        padding: 50px;
+        padding: 70px;
+        
     }
     nav{
         flex-direction: column;
@@ -156,5 +301,40 @@ line-height: 26px;
     .team-container img{
         width: 80%;
       }
+      .team-content{
+        width: 30%;
+        height: 50%;
+      }
+      .card-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+       
+    }
+    .card{
+        border: 1px solid #FF900E;
+        border-radius: 8px;
+        text-align: center;
+        width: 30%;
+        height: 40%;
+        }
+       .sp-container{
+        height: 50%;
+        width: 70%;
+        text-align: center;
+       }
+       .sp-img{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sp-img img{
+        height: 50%;
+        width: 50%;
+    }
+    .fact-container{
+        height: 50%;
+        width: 70%;
+    }
     
    }
